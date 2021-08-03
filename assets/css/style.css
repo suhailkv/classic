@@ -2341,3 +2341,6 @@ section {
   }
 
 }
+svg {
+  display: none;
+}
