@@ -113,12 +113,15 @@
 
   // Toggle .header-scrolled class to #header when page is scrolled
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 1000) {
+    if ($(this).scrollTop() > 500) {
       $('#header').addClass('header-scrolled');
       $('#header').removeClass('hidden');
+      $('.mobile-nav-toggle i').removeClass('hidden');
     } else {
       $('#header').removeClass('header-scrolled');
       $('#header').addClass('hidden');
+      $('.mobile-nav-toggle i').addClass('hidden');
+      
     }
   });
 

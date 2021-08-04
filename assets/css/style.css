@@ -67,10 +67,11 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+
 #header {
   background: #3995D0;
   z-index: 997;
-  padding: 20px 0;
+  padding: 0px 0;
   transition: all 0.5s;
 }
 .hidden {
@@ -251,7 +252,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 992px) {
   .get-started-btn {
     margin: 0 48px 0 0;
-    padding: 6px 18px;
+    padding: 7px 3px;
   }
 }
 
@@ -273,6 +274,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .mobile-nav-toggle i {
   color: #111111;
+  top: 1rem;
+  position: relative;
 }
 
 .mobile-nav {
@@ -367,9 +370,8 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
   position: relative;
-  top: -149px;
-  width: 100%;
   height: 100vh;
+  width: 100%;
   background: url("../img/hero-bg.jpg") center top no-repeat;
   background-size: cover;
   position: relative;
@@ -2217,11 +2219,11 @@ section {
 }
 #counts h3 {
   POSITION: ABSOLUTE;
-  bottom: 53px;
-  left: 63px;
+  bottom: 7rem;
+  left: 7rem;
   color: #fff;
   font-weight: 700;
-  right: 81px;
+  right: 2rem;
 }
 #b1 {
   position:absolute;
@@ -2243,7 +2245,7 @@ section {
   text-align: -webkit-center;
 }
 .vision h3 {
-  border: 5px solid white;
+  border: 11px solid white;
   padding: 34px;
   left: 95px;
   right: 120px;
@@ -2263,44 +2265,69 @@ section {
    filter:  url(#monochrome);
 }
 
-
+#mob-vision {
+  display: none;
+}
 @media screen and (max-width: 768px) {
-  .vision h3 {
-    border: 5px solid white;
-    padding: 13px;
-    }
-    #counts h3 {
-      margin: auto;
-      padding: auto;
-      POSITION: ABSOLUTE;
-      bottom: 37px;
-      left: 17px;
-      color: #fff;
-      font-weight: 700;
-      right: 46px;
-      font-size: 2em;
-    }
+  #counts {
+    display: none;
   }
-  .vision h4 {
+  #mob-vision {
+    display: block;
+  }
+  .vision-text{
     position: absolute;
-    left: 39px;
-    top: 36px;
-    font-size: 49px;
+  }
+  .vision-text h4 {
+    position: relative;
+    font-size: 2em;
+    font-weight: 800;
     color: white;
-    font-family: "Raleway"; 
+    padding: 8px;
+  }
+  .vision-text h3 {
+    border: 8px solid white;
+    color: white;
+    position: relative;
+    top: 170px;
+    font-size: 24px;
     font-weight: 900;
+    padding: 1px 8px;
+    text-align: -webkit-center;
   }
- 
-  .active_in_the_field{
-    width: 100%;
-    height: auto;
+  #header .logo img {
+    max-height: 61px;
+    max-width: 230px;
   }
-  .bluemonochrome img {
-    width:30%;
-    max-width: 100px;
-    -webkit-filter: url(#monochrome);
-     filter:  url(#monochrome);
+  .mobile-nav-toggle i {
+    color: #111111;
+    position: relative;
+    left: 16px;
+    top: 5px;
   }
+
+}
+.vision h4 {
+  position: absolute;
+  left: 39px;
+  top: 36px;
+  font-size: 49px;
+  color: white;
+  font-size: 4rem;
+  font-family: "Raleway"; 
+  font-weight: 900;
+}
+
+.active_in_the_field{
+  width: 100%;
+  height: auto;
+}
+.bluemonochrome img {
+  width:30%;
+  max-width: 100px;
+  -webkit-filter: url(#monochrome);
+    filter:  url(#monochrome);
+}
 .social-links li span{
   top: -2rem;
   left: 3rem;
@@ -2309,14 +2336,31 @@ section {
 .social-links a {
   width: 0;
 }
-.header-details{
-  
-  line-height: 7px;
-  position: relative7;
-  top: 24px;
+@media screen and (max-width: 1212px) {
+  .header-details {
+    line-height: 7px;
+    position: relative;
+    top: 1em;
+    left: 40em;
+  }
+  .header-details p:nth-child(2) {
+    position: relative;
+    left: 13rem;
+    top: -23px;
+  }
+  .header-details p:nth-child(3) {
+    position: relative;
+    left: 17rem;
+    top: -25px;
+  }
+  .space {
+  display: none;
+  }
 }
+
 #process img{
   width: 43%;
+  min-width: 300px;
 }
 .process {
   text-align: center;
@@ -2328,19 +2372,21 @@ section {
     border-block-color: black;
 }
 
-@media screen and(max-width:1240px) {
-  .header-details{
-    position: absolute;
-    left: 35rem;
-    top: 5rem;
-  }
-  .header-details p:nth-child(2){
-    position: relative;
-    left: 214px;
-    top: -23px;
-  }
 
+
+@media (min-width: 1240px){
+  #counts h3 {
+    POSITION: ABSOLUTE;
+    bottom: 7rem;
+    left: 7rem;
+    color: #fff;
+    font-weight: 700;
+    right: 2rem;
+    font-size: 28px;
+
+  }
 }
 svg {
   display: none;
 }
+
