@@ -2268,6 +2268,18 @@ section {
 #mob-vision {
   display: none;
 }
+@media screen and (max-width:518px){
+  .vision-text h3 {
+    border: 6px solid white !important;
+    color: white;
+    position: relative;
+    top: 3em !important;
+    font-size: 17px !important;
+    font-weight: 900;
+    padding: 1px 23px !important;
+    text-align: -webkit-center;
+  }
+}
 @media screen and (max-width: 768px) {
   #counts {
     display: none;
@@ -2307,6 +2319,7 @@ section {
   }
 
 }
+
 .vision h4 {
   position: absolute;
   left: 39px;
