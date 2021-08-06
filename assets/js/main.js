@@ -56,6 +56,10 @@
       $("#logo").css({"font-size": "8px","font-weight": "900"}
     );
     }
+    $(".apply-btn").click(function(){
+      let alt = $(this).parent().parent().children().attr("alt");
+      $("#alt").val(alt);
+    });
   });
 
   // Navigation active state on scroll
