@@ -51,6 +51,11 @@
         }, 1500, 'easeInOutExpo');
       }
     }
+    if ($(window).width() < 426){
+      $("#logo").attr("src","./assets/img/logo.png");
+      $("#logo").css({"font-size": "8px","font-weight": "900"}
+    );
+    }
   });
 
   // Navigation active state on scroll
@@ -231,4 +236,5 @@
   $(window).on('load', function() {
     aos_init();
   });
+  
 })(jQuery);

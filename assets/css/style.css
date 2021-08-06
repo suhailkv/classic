@@ -248,7 +248,12 @@ h1, h2, h3, h4, h5, h6 {
   background: #111111;
   color: #fff;
 }
-
+@media (max-width: 426px) {
+  .get-started-btn{
+    font-size: 8px;
+    font-weight: 900;
+  }
+}
 @media (max-width: 992px) {
   .get-started-btn {
     margin: 0 48px 0 0;
@@ -2190,8 +2195,18 @@ section {
 #carousal {
   background: url(/assets/img/hero-bg.jpg);
   background-size: cover;
-
+  margin: 0px 0px;
+  background-color: #3995D0;
 }
+.carousal-inner div {
+  max-width: 130vh !important;
+  margin: auto !important;
+}
+#clients{
+  padding: 0px 0px;
+}
+
+
 @media only screen and (max-width: 850px) {
   #hero img {
     width: 100%;
