@@ -250,14 +250,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 426px) {
   .get-started-btn{
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 900;
   }
 }
 @media (max-width: 992px) {
   .get-started-btn {
     margin: 0 48px 0 0;
-    padding: 7px 3px;
+    padding: 10px 6px;
   }
 }
 .apply-btn {
@@ -282,7 +282,7 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   right: 15px;
   top: 15px;
-  z-index: 9998;
+  z-index: 1000;
   border: 0;
   background: none;
   font-size: 24px;
