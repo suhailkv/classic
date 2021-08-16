@@ -14,7 +14,7 @@ body {
 }
 
 a {
-  color: rgb(23 61 106);
+  color: #fff;
 }
 
 a:hover {
@@ -82,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   transition: 4s;
 
-  color: white;
+  color: rgb(7, 7, 7);
   transition: 1s;
   font-size: 15px;
   letter-spacing: 1.5px;
@@ -144,7 +144,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a {
   display: block;
   position: relative;
-  color: #111111;
+  color: #fff;
   transition: 0.3s;
   font-size: 16px;
   font-weight: 600;
@@ -250,7 +250,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 426px) {
   .get-started-btn{
-    font-size: 8px;
+    font-size: 10px;
     font-weight: 900;
   }
 }
@@ -830,9 +830,10 @@ section {
 }
 
 .services .icon-box i {
-  float: left;
-  color: #000;
+  position: fixed;
   font-size: 40px;
+  color: #000;
+  margin-bottom: 10px;
 }
 
 .services .icon-box h4 {
@@ -2043,6 +2044,10 @@ section {
   color: #aaaaaa;
   font-size: 14px;
 }
+form button:hover {
+  background: #111111 !important;
+  color: #fff !important;
+}
 
 /*--------------------------------------------------------------
 # Footer
@@ -2201,6 +2206,10 @@ section {
   transition: 0.3s;
   
 }
+#footer .social-links i {
+  position: relative;
+    left: 37px;
+}
 
 #footer .social-links a:hover {
   color: #fff;
@@ -2244,7 +2253,7 @@ section {
   }
  
 }
-#counts img {
+#counts img, #mob-vision img {
   filter: blur(3px);
   -webkit-filter: blur(3px);
   width: 100vw;
@@ -2305,11 +2314,18 @@ section {
     border: 6px solid white !important;
     color: white;
     position: relative;
-    top: 3em !important;
     font-size: 17px !important;
     font-weight: 900;
     padding: 1px 23px !important;
     text-align: -webkit-center;
+  }
+}
+@media screen and (min-width: 690px){
+  .vision-text h4 {
+    font-size: 3.5em !important;
+  }
+  .vision-text h3 {
+    font-size: 36px !important;
   }
 }
 @media screen and (max-width: 768px) {
@@ -2333,7 +2349,7 @@ section {
     border: 8px solid white;
     color: white;
     position: relative;
-    top: 170px;
+    top: 155px;
     font-size: 24px;
     font-weight: 900;
     padding: 1px 8px;
